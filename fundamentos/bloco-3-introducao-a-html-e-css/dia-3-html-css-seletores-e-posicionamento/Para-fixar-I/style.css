@@ -12,3 +12,7 @@ li :active
 {
     font-family: monospace;
 }
+ol, li
+{
+    list-style: none;
+}
