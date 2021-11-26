@@ -10,7 +10,7 @@ div:hover
 }
 div:nth-child(odd) h3
 {
-    color: cyan;
+    font-style: italic;
 }
 
 div:nth-of-type(1)
