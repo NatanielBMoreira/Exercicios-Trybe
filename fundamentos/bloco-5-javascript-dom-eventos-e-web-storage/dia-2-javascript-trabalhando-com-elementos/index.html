@@ -86,6 +86,11 @@
         document.querySelector('main').appendChild(newTagSecttion3);
         document.querySelector('main').lastElementChild.setAttribute('class', 'right-content');
 
+        // Nova imagem na newTagSection2
+        const newTagImg = document.createElement('img');
+        document.querySelector('.left-content').appendChild(newTagImg);
+        document.querySelector('img').setAttribute('class', 'small-image');
+        document.querySelector('.small-image').setAttribute('src', 'https://picsum.photos/200');
 
         
 
