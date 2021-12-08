@@ -92,6 +92,77 @@
         document.querySelector('img').setAttribute('class', 'small-image');
         document.querySelector('.small-image').setAttribute('src', 'https://picsum.photos/200');
 
+        // Nova tag ul na newTagSection3
+        const newTagUl = document.createElement('ul');
+        document.querySelector('.right-content').appendChild(newTagUl);
+        let li = [];
+        ul(li);
+        for(let index = 0 ; index < 10 ; index += 1)
+        {
+            li[index];
+        }
+        
+        
+        
+        
+        
+/*         for(let count = 0 ; count < 10 ; count += 1)
+        {
+             let li = document.createElement('li');
+             document.querySelector('ul').appendChild(li)
+        }
+         */
+
+
+        function ul(li)
+        {
+            for(let index = 0 ; index < 10 ; index += 1)
+            {
+             li.push (document.createElement('li'));
+             document.querySelector('ul').appendChild(li[index]);
+             switch(index)
+             {
+                case 0:
+                     li[index].innerText = 'Um.';
+                     break; 
+                case 1:
+                     li[index].innerText = 'Dois.';
+                     break; 
+                case 2:
+                     li[index].innerText = 'Três.';
+                     break; 
+                case 3:
+                     li[index].innerText = 'Quatro.';
+                     break;     
+                case 4:
+                      li[index].innerText = 'Cinco.';
+                     break; 
+                case 5:
+                     li[index].innerText = 'Seis.';
+                     break; 
+                case 6:
+                     li[index].innerText = 'Sete.';
+                     break; 
+                case 7:
+                     li[index].innerText = 'Oito.';
+                     break; 
+                case 8:
+                    li[index].innerText = 'Nove.';
+                     break; 
+                case 9:
+                    li[index].innerText = 'Dez.';
+                     break;
+             }
+            }
+            return li;      
+        }
+        function addText(li)
+        {
+
+        }
+
+
+
         
 
     </script>
