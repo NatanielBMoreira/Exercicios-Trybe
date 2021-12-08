@@ -95,27 +95,24 @@
         // Nova tag ul na newTagSection3
         const newTagUl = document.createElement('ul');
         document.querySelector('.right-content').appendChild(newTagUl);
-        let li = [];
-        ul(li);
-        for(let index = 0 ; index < 10 ; index += 1)
+        ul();
+
+        //Novas três tags h3 na NewTagMain
+        newTagsH3()
+/*         for(let index ; index < 3 ; index += 1)
         {
-            li[index];
-        }
-        
-        
-        
-        
-        
-/*         for(let count = 0 ; count < 10 ; count += 1)
-        {
-             let li = document.createElement('li');
-             document.querySelector('ul').appendChild(li)
+            newTagH3[index];
         }
          */
+        
+        
+        
+        
 
 
-        function ul(li)
+        function ul()
         {
+            let li = [];
             for(let index = 0 ; index < 10 ; index += 1)
             {
              li.push (document.createElement('li'));
@@ -156,11 +153,18 @@
             }
             return li;      
         }
-        function addText(li)
+
+        function newTagsH3()
         {
-
+            let tagsArray = []
+            let newTagH3 = []
+            for (let index = 0 ; index < 3 ; index += 1) 
+            {
+                tagsArray.push(document.createElement('h3'));
+                newTagH3[index] = document.querySelector('.main-content').appendChild(tagsArray[index]);
+            }
+            return newTagH3;
         }
-
 
 
         
