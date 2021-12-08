@@ -70,6 +70,7 @@
         //Nova tag section
         const newTagSection = document.createElement('section');
         document.getElementsByClassName('main-content')[0].appendChild(newTagSection);
+        document.querySelector('main').firstChild.setAttribute('class', 'center-content');
 
         //Nova tag p
         const newTagP = document.createElement('p');
@@ -113,6 +114,9 @@
         // Centralizado a section class right-content
         let right = document.querySelector('main')
         right.firstChild.nextSibling.style.marginRight = 'auto';
+
+        //5-Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+        document.querySelector('.center-content').parentElement.style.backgroundColor = 'purple';
 
 
         function ul()
