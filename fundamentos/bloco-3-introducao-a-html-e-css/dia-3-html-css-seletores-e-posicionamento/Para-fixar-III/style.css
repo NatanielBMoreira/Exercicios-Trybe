@@ -1,0 +1,63 @@
+ol
+{
+    background-color: yellow;
+}
+ol li
+{
+    text-transform: uppercase;
+}
+ol li.par
+{
+    color: green;
+    text-transform: none;
+}
+h1, h3
+{
+    color: red;
+}
+h1 i , h3 i
+{
+    font-size: 40px;
+    border: 1px black solid;
+}
+li
+{
+    font-size: 20px;
+}
+li i
+{
+    font-weight: bold;
+}
+li.first
+{
+    color: blue;
+}
+li.first.java
+{
+    background-color: pink;
+}
+#listAliados #stackoverflow a:hover
+{
+    font-weight: bold;
+    color: orange;
+}
+#listAliados #w3schools a:hover
+{
+    font-weight: bold;
+    color: green;
+}
+#listAliados #developer a:hover
+{
+    font-weight: bold;
+    color: black;
+}
+#listAliados #devdocs a:hover
+{
+    font-weight: bold;
+    color:yellow;
+}
+#listAliados #trybe a:hover
+{
+    font-weight: bold;
+    color: green;
+}
