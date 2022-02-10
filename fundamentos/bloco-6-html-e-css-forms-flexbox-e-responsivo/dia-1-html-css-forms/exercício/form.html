@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" id="formulario">
+        <fieldset>
+        
+            <!-- Nome -->
+            <label for="#textName">
+                Nome: <input class="inputs"  type="text" maxlength="40" required id="textName">
+            </label>
+            <!-- E-mail -->
+            <label for="#email">
+                E-mail: <input class="inputs" type="email" maxlength="50" required id="email">
+            </label>
+            <!-- CPF -->
+            <label for="#cpf">
+                CPF: <input class="inputs" type="text" maxlength="11" required id="cpf">
+            </label>
+            <br>
+            <!-- Endereço -->
+            <label for="#endereço">
+                Endereço: <input class="inputs" type="text" maxlength="200" required id="endereço">
+            </label>
+            <!-- Cideade -->
+            <label for="#city">
+                Cidade: <input class="inputs" type="text" maxlength="28" required id="city">
+            </label>
+            <!-- Estados -->
+            <label for="#estados">Estado:</label>
+                <select name="Estados" id="estados" required>
+                </select>
+            <!-- Tipo -->
+            <label for="tipo">Tipo: </label>
+                <input class="inputs" type="radio" name="tipo" id="casa" required>
+                <label for="casa">Casa</label>
+                <input class="inputs" type="radio" name="tipo" id="apartamento" required>
+                <label for="apartamento">Apartamento</label>
+        
+        </fieldset>
+        <fieldset>
+            <label for="resumo">Resumo Do Currículo</label>
+                <br>
+            <textarea name="resumoDoCurriculo" id="resumo" maxlength="1000" cols="30" rows="10" required></textarea>
+            <br>
+
+            <label for="cargo">Cargo:</label>
+            <input class="inputs" type="text" maxlength="40" required id="cargo">
+            <label for="descriçãoCargo">Descrição Do Cargo:</label>
+            <input class="inputs" type="text" maxlength="500" required id="descriçãoCargo">
+
+            <label for="data">Data de início:</label>
+            <input class="inputs" type="date" name="dataI" required id="data">
+            <input class="inputs" type="submit" value="Enviar" id="enviar">
+        </fieldset>
+    </form>
+    <button id="button">Parar</button>
+    <script src="script.js"></script>
+</body>
+</html>
